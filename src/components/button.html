@@ -1,0 +1,21 @@
+<ion-grid>
+	<ion-row>
+		<ion-col>
+			<button ion-button color="danger" small block (click)="onReset('all')">Reset All</button>
+		</ion-col>
+		<ion-col>
+			<button ion-button color="danger" small block (click)="onReset('tap')">Reset "Taps"</button>
+		</ion-col>
+		<ion-col>
+			<button ion-button color="danger" small block (click)="onReset('press')">Reset "Presses"</button>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col>
+			<button ion-button color="secondary" block (tap)="onIncrement('tap')">Tap Here</button>
+		</ion-col>
+		<ion-col>
+			<button ion-button color="secondary" block (press)="onIncrement('press')">Press Here</button>
+		</ion-col>
+	</ion-row>
+</ion-grid>
